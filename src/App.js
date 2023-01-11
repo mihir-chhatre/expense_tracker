@@ -5,13 +5,13 @@ import NewExpense from "./components/NewExpense/NewExpense";
 const dummy_expenses = [
   {
     id: "1",
-    title: "Car Insurance",
-    amount: 95.12,
+    title: "Vegetables",
+    amount: 13.82,
     date: new Date(2022, 9, 14),
   },
-  { id: "2", title: "Books", amount: 95.12, date: new Date(2000, 7, 14) },
-  { id: "3", title: "Macbook", amount: 95.12, date: new Date(2000, 7, 14) },
-  { id: "4", title: "Phone", amount: 95.12, date: new Date(2000, 7, 14) },
+  { id: "2", title: "Oats", amount: 8.99, date: new Date(2021, 7, 14) },
+  { id: "3", title: "Lunch", amount: 17.99, date: new Date(2022, 7, 14) },
+  { id: "4", title: "iPad", amount: 499.99, date: new Date(2020, 7, 14) },
 ];
 
 const App = () => {
@@ -23,10 +23,6 @@ const App = () => {
         return [expense, ...prevState]
       })
     }
-
-    // const filterExpensesHandler = (expense) => {
-    //   console.log(expense)
-    // }
   
     return (
       <div>
